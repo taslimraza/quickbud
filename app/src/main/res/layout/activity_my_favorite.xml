@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.app.android.quickbud.activities.MyFavoriteActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar"/>
+
+    <ListView
+        android:id="@+id/favorite_rest_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loading_image"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/no_favorite_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Favorite Location Found"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

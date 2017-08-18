@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/restaurant_defaulticon" />
+
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/location_image"
+        android:layout_toLeftOf="@+id/linked_rest"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="Rocknes"
+        android:textColor="@color/location_list_restaurant_name"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/location_rating"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/location_name"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/location_image"
+        android:src="@mipmap/rating_bg"/>
+
+    <TextView
+        android:id="@+id/location_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_rating"
+        android:layout_toRightOf="@+id/location_image"
+        android:layout_toLeftOf="@+id/menu_available"
+        android:paddingLeft="10dp"
+        android:textSize="13sp"
+        android:text="2914 W Market St, Fairlawn, OH 44333" />
+
+    <TextView
+        android:id="@+id/rest_timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_address"
+        android:layout_toRightOf="@+id/location_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-5dp"
+        android:visibility="gone"
+        android:textSize="13dp"
+        android:text="Timing - "/>
+
+    <TextView
+        android:id="@+id/location_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_timing"
+        android:layout_toRightOf="@+id/location_image"
+        android:layout_marginLeft="10dp"
+        android:textSize="13dp"
+        android:text="0.9Km" />
+
+    <TextView
+        android:id="@+id/location_ewt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_timing"
+        android:layout_toRightOf="@+id/location_distance"
+        android:layout_marginLeft="8dp"
+        android:textSize="13dp"
+        android:text="5 mins EWT"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/linked_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/quickbud_small_logo"/>
+
+    <ImageView
+        android:id="@+id/menu_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="6dp"
+        android:background="@mipmap/ic_menu_available"/>
+</RelativeLayout>

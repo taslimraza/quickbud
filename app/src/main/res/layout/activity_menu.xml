@@ -1,0 +1,50 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:fitsSystemWindows="true"
+    tools:context="com.app.android.quickbud.activities.MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <FrameLayout
+            android:id="@+id/menu_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar"/>
+
+        <WebView
+            android:id="@+id/menu_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/menu_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar"
+            android:visibility="gone"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/loading_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loading_image"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/drawer_menu" />-->
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_text_color"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.app.android.quickbud.fragments.TableBookingConfirmationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/primary_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Estimated Wait Time"
+                android:textColor="@color/button_text_color"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="00:15:00"
+                android:textColor="@color/button_text_color"
+                android:textSize="70dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/order_conformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="BOOKING CONFIRMATION"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/order_conformation"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Dear, James Mathew," />
+
+        <TextView
+            android:id="@+id/table_booked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_name"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Your seat booking in Rocknes is confirmed" />
+
+        <TextView
+            android:id="@+id/booking_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_booked"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Booking ID : BO/3389909" />
+
+        <TextView
+            android:id="@+id/booked_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booking_id"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="DATE: 16/09/2015, TIME: 4:40PM" />
+
+
+        <Button
+            android:id="@+id/open_preOrder_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@color/primary_color"
+            android:gravity="center"
+            android:text="Pre-Order Menu"
+            android:textColor="@color/button_text_color" />
+    </RelativeLayout>
+</LinearLayout>

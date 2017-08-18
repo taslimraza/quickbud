@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.android.quickbud.activities.RestaurantServices">
+
+    <RelativeLayout
+        android:id="@+id/rest_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/restaurant_icon">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar"
+            android:layout_marginTop="-40dp">
+            <ImageView
+                android:id="@+id/rating_image"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dispensary_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/app_bar"
+            android:src="@mipmap/restaurant_defaulticon"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/location_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dispensary_logo"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/rest_name"
+            android:src="@mipmap/ic_favorite_unselected"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/rest_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dispensary_logo"
+            android:gravity="center_horizontal"
+            android:text="Rockne's Akron"
+            android:singleLine="true"
+            android:textColor="@color/rest_details_screen_rest_name"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/rest_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rest_name"
+            android:gravity="center_horizontal"
+            android:text="2914 W Market St, Fairlawn"
+            android:textColor="@color/rest_details_screen_rest_name"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/features_layout"
+            android:layout_below="@+id/rest_address"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/atm"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="ATM"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/medical"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Medical"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/recreational"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Recreational"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/features_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/get_direction"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/restaurant_services_button"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="@string/get_direction_text"
+                android:layout_gravity="center"
+                android:textColor="@color/rest_details_screen_rest_name" />
+
+            <Button
+                android:id="@+id/hours"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/restaurant_services_button"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="Hours"
+                android:layout_gravity="center"
+                android:textColor="@color/rest_details_screen_rest_name" />
+
+            <Button
+                android:id="@+id/call_us"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/restaurant_services_button"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="@string/call_us_text"
+                android:layout_gravity="center"
+                android:textColor="@color/rest_details_screen_rest_name" />
+
+            <!--<ImageView
+                android:id="@+id/location_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_favorite_unselected"
+                android:paddingLeft="10dp"/>-->
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/rest_estimation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:alpha="0.7"
+            android:background="#000000"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/icon_distance" />
+
+            <TextView
+                android:id="@+id/rest_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.9 Km"
+                android:textColor="@color/rest_details_screen_rest_name" />
+
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/rest_details_screen_rest_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:src="@mipmap/ic_camera" />
+
+            <TextView
+                android:id="@+id/chats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Chats"
+                android:textColor="@color/rest_details_screen_rest_name" />
+
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/rest_details_screen_rest_name" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:src="@mipmap/icon_clock" />
+
+            <TextView
+                android:id="@+id/rest_ewt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 min EWT"
+                android:textColor="@color/rest_details_screen_rest_name" />
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/homeScreenListView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rest_logo"
+        android:background="#000"
+        android:paddingTop="10dp"
+        android:layout_weight="3" />
+
+</LinearLayout>

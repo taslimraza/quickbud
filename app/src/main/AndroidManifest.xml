@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.android.quickbud">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.app.android.quickbud.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.app.mobi.quicktabledemo.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name="com.app.android.quickbud.utils.QTApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.app.android.quickbud.activities.RegistrationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.ListOfRestaurantActivity"
+            android:label="@string/title_activity_location"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".activities.SearchLocationActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBbU-VhGVEZQ0D8k7TIMyVSPoJq-oFWODY" />
+
+        <activity
+            android:name="com.app.android.quickbud.activities.RestaurantServices"
+            android:label="@string/title_activity_home_screen"
+            android:parentActivityName="com.app.android.quickbud.activities.ListOfRestaurantActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value="com.example.mobi.quicktabledemo.activities.ListOfRestaurantActivityActivity" /> -->
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.MenuSectionActivity"
+            android:label="@string/title_activity_pre_order"
+            android:parentActivityName="com.app.android.quickbud.activities.RestaurantServices"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value="com.example.mobi.quicktabledemo.activities.RestaurantServices" /> -->
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.BookYourTableActivity"
+            android:label="@string/title_activity_pre_order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.android.quickbud.activities.RestaurantServices" />
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.OrderDetailsActivity"
+            android:label="@string/title_activity_modified_order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.android.quickbud.activities.RestaurantServices" />
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.OrderConfirmationActivity"
+            android:label="@string/title_activity_order_confirmation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.GcmMessageActivity"
+            android:label="@string/title_activity_checkout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.app.android.quickbud.activities.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.app.android.quickbud.activities.SearchLocationActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.android.quickbud.activities.ListOfRestaurantActivity" />
+        </activity>
+        <activity
+            android:name="com.app.android.quickbud.activities.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.android.quickbud.activities.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.app.android.quickbud.activities.AboutUsActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.app.android.quickbud.geofence.GeofenceTransitionIntentService" />
+
+        <!-- <service android:name=".network.ChatService" -->
+        <!-- android:enabled="true" /> -->
+
+        <service
+            android:name="com.app.android.quickbud.fcmServices.MyFcmMsgListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.app.android.quickbud.fcmServices.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.app.android.quickbud.fcmServices.RegistrationIntentService"
+            android:exported="false">
+        </service>
+
+        <service android:name="com.app.android.quickbud.utils.LocationService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.app.android.quickbud.activities.PageScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.android.quickbud.activities.ChatImagesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.app.android.quickbud.activities.MainMenuActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.app.android.quickbud.activities.FindRestaurantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.app.android.quickbud.activities.MyFavoriteActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.app.android.quickbud.activities.BudNewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.app.android.quickbud.activities.TopBudsActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

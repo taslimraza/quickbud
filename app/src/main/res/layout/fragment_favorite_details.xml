@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.app.android.quickbud.fragments.FavoriteDetailsFragment">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/loading_image"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/favorite_details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/favorite_icon"
+            android:text="Name"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant_name"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/location_icon_small" />
+
+        <TextView
+            android:id="@+id/restaurant_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/location_icon" />
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restaurant_address"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="OrderNumber: " />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/order_number"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/order_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/app_bar">
+
+                <com.app.android.quickbud.utils.ExpandableListView
+                    android:id="@+id/cart_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/cart_list"
+                    android:background="#E4E4E4" />
+
+                <TextView
+                    android:id="@+id/item_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Item Total" />
+
+                <TextView
+                    android:id="@+id/item_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/line1"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="$ 100" />
+
+
+                <TextView
+                    android:id="@+id/bill_total_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/item_total"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Bill Total" />
+
+
+                <TextView
+                    android:id="@+id/bill_total_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/item_total"
+                    android:layout_margin="10dp"
+                    android:text="$ 100" />
+
+                <TextView
+                    android:id="@+id/grand_total_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/bill_total_cost"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Grand Total" />
+
+                <TextView
+                    android:id="@+id/grand_total_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bill_total_cost"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="$ 100" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/grand_total_cost"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <!--<Button-->
+                        <!--android:id="@+id/edit_order"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@color/primary_color"-->
+                        <!--android:text="edit order"-->
+                        <!--android:textColor="@color/button_text_color" />-->
+
+                    <Button
+                        android:id="@+id/reorder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/primary_color"
+                        android:text="Re-Order"
+                        android:textColor="@color/button_text_color" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

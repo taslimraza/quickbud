@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.android.quickbud.activities.RestaurantServices">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <ScrollView
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp">
+                <com.app.android.quickbud.activities.RoundedImageView
+                    android:id="@+id/iv_upload"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/default_profile_pic"
+                    android:layout_centerHorizontal="true">
+                </com.app.android.quickbud.activities.RoundedImageView>
+
+                <ImageView
+                    android:id="@+id/btn_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_toRightOf="@+id/iv_upload"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/upload" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_profile_name_text"
+                android:textSize="12dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/custom_edittext"
+                android:singleLine="true"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:digits="@string/name_validation"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp">
+                <requestFocus/>
+            </EditText>
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_profile_email_text"
+                android:textSize="12dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/custom_edittext"
+                android:digits="@string/email_validation"
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:id="@+id/user_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_profile_mobile_text"
+                android:textSize="12dp"
+                android:singleLine="true"
+                android:gravity="center_horizontal"
+                android:maxLength="15"
+                android:inputType="phone"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_profile_address_bg"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Enter Address(Mandatory for Pre-Order feature)"
+                    android:textSize="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address:"/>
+
+                    <EditText
+                        android:id="@+id/address_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user_address_input_bg"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textSize="14dp"
+                        android:padding="4dp"
+                        android:inputType="textCapSentences"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City:" />
+
+                    <EditText
+                        android:id="@+id/address_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user_address_input_bg"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textSize="14dp"
+                        android:padding="4dp"
+                        android:inputType="textCapSentences"
+                        android:maxLength="30"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State:"/>
+
+                    <EditText
+                        android:id="@+id/address_state"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user_address_input_bg"
+                        android:layout_marginLeft="5dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textSize="14dp"
+                        android:padding="4dp"
+                        android:inputType="textCapSentences"
+                        android:maxLength="30"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zip:"
+                        android:layout_marginLeft="30dp"/>
+
+                    <EditText
+                        android:id="@+id/address_zip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/user_address_input_bg"
+                        android:layout_marginLeft="5dp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:textSize="14dp"
+                        android:padding="4dp"
+                        android:maxLength="6"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:id="@+id/cancel_user_profile"
+                    android:layout_width="140dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/user_address"
+                    android:text="@string/user_profile_cancel"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/button_text_color"
+                    android:background="@color/primary_color"/>
+
+                <Button
+                    android:id="@+id/save_user_profile"
+                    android:layout_width="140dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/user_address"
+                    android:text="@string/user_profile_save"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/button_text_color"
+                    android:background="@color/primary_color"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loading_image"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#8dc73f</color>
+    <!--<color name="primary_color">#df273c</color>-->
+    <color name="button_text_color">#fbfbfb</color>
+    <color name="registration_edittext_color">#fbfbfb</color>
+
+    <color name="menu_text">#fbfbfb</color>
+    <color name="location_list_restaurant_name">#000000</color>
+
+    <color name="book_table_spinner_bg">#E9E9E9</color>
+
+    <color name="chat_send_msg_layout_bg">#d0d0d0</color>
+    <color name="chat_image_preview_bg">#000</color>
+    
+    <color name="chat_inputbox_bg">#ffffff</color>
+    <color name="callUs_bg_border_color">#fff</color>
+
+    <color name="flyout_user_profile_text">#fbfbfb</color>
+    <color name="flyout_menu_listView_backgroud">#232222</color>
+
+    <color name="order_details_rest_name_text">#000</color>
+
+    <color name="patron_page_msg_text">#4c4c4c</color>
+    <color name="patron_page_rest_name">#000</color>
+    
+    <color name="search_location_cur_loc_bg">#e5e5e5</color>
+
+    <color name="rest_details_screen_rest_name">#fbfbfb</color>
+    
+    <color name="menu_item_name">#2a2a2a</color>
+
+    <color name="qt_offer_msg">#000000</color>
+
+    <color name="high_chair_text">#000000</color>
+
+    <!--<color name="locationList_title_text"></color>-->
+    <!--<color name="locationList_subTitle_text"></color>-->
+    <!--<color name="homeScreen_title_text"></color>-->
+    <!--<color name="homeScreen_subTitle_text"></color>-->
+
+    <!--<color name="black">#000000</color>-->
+
+
+</resources>

@@ -1,0 +1,111 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.android.quickbud.activities.ListOfRestaurantActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <ImageView
+            android:id="@+id/rest_image"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/app_bar"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/rest_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rest_image"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/rest_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rest_name"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="AKRON \n 330-762-7555 \n 7 Merriman Road, Akron"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rest_address"
+            android:layout_marginTop="55dp"
+            android:gravity="center"
+            android:text="James Mathew"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/inline_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_name"
+            android:gravity="center"
+            android:text="You are currently in line!"
+            android:textSize="18dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/wait_time"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/inline_text"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="We will notify you when \n your table is ready."-->
+            <!--android:textSize="16dp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inline_text"
+            android:layout_marginTop="50dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:text="Press Finished to complete or \n place your order for faster service!" />
+
+
+        <Button
+            android:id="@+id/book_table_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/place_your_order"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/primary_color"
+            android:text="Finished"
+            android:textColor="@color/button_text_color" />
+
+        <Button
+            android:id="@+id/place_your_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/primary_color"
+            android:text="Pre-order your food"
+            android:textColor="@color/button_text_color" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/drawer_menu" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/orderItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/orderSpinner"
+        android:text="Staeamed Veg Momo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/orderPrice"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="$ 140"
+        android:textSize="15dp" />
+
+
+    <Spinner
+        android:id="@+id/orderSpinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/orderPrice"
+        android:focusableInTouchMode="false"
+        android:entries="@array/quantity"
+        android:gravity="center_horizontal"/>
+
+    <ListView
+        android:id="@+id/options_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:focusableInTouchMode="false"
+        android:listSelector="@android:color/transparent"
+        android:layout_below="@+id/orderItem" />
+
+</RelativeLayout>

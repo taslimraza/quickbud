@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_content"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left">
+
+    <RelativeLayout
+        android:id="@+id/user_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"/>
+
+        <TextView
+            android:id="@+id/user_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@color/flyout_user_profile_text"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/user_location"
+            android:layout_marginLeft="15dp"
+            android:text="james mathew"
+            android:textColor="@color/flyout_user_profile_text"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/drawer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_image_layout"
+        android:background="@color/flyout_menu_listView_backgroud"
+        android:divider="@null" />
+</RelativeLayout>

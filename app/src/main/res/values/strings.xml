@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">QuickBud</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_location"></string>
+    <string name="title_activity_google_play_services">GooglePlayServicesActivity</string>
+    <string name="seat">No. of Seat to be booked</string>
+    <string name="dine_in">Book a Table &amp; Pre-Order your meal</string>
+    <string name="choose_your_size">Choose Your Size</string>
+    <string name="add_order">Add to Order</string>
+    <string name="add_preOrder">Add to PreOrder</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="menu">MENU</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="list_of_restaurant">Getting List of Restaurant</string>
+
+    <string name="app_version">App Version</string>
+    <string name="quick_chat_msg_hint"> Enter your message...</string>
+    <string name="qt_thanks_msg">Thank You For Choosing</string>
+    <string name="cart_disclaimer_msg">Disclaimer: Conditions apply*</string>
+    <string name="cart_checkout">Proceed to checkout</string>
+    <string name="cart_empty_msg">Your cart is empty...</string>
+    <string name="cart_coupon_text">Enter Your Coupon code</string>
+    <string name="cart_description_text"> Type the description here</string>
+
+    <string name="ewt_text">Estimated Wait Time</string>
+    <string name="ewt_parties_ahead_text">Parties ahead of you:</string>
+    <string name="ewt_next_seated_text">You are next to be seated!</string>
+    <string name="ewt_order_in_text">Your order is in!</string>
+    <string name="ewt_no_booking_text">*No Booking Status*</string>
+
+    <string name="qt_offer_empty_text">No Offers to display!</string>
+    <string name="qt_paging_thanks_text">We have your order ready for pickup!</string>
+    <string name="stop_paging_text">Stop Pager</string>
+
+    <string name="user_profile_name_text">Enter your name</string>
+    <string name="user_profile_email_text">Enter your email</string>
+    <string name="user_profile_mobile_text">Enter your mobile</string>
+    <string name="user_profile_address_text">Enter your address</string>
+    <string name="user_profile_cancel">cancel</string>
+    <string name="user_profile_save">save</string>
+
+    <string name="menu_favorite_empty">No favorites added yet!</string>
+
+    <string name="bud_gallery_text">Bud Gallery</string>
+    <string name="pre_order_text">Pre-order your food</string>
+    <string name="get_out_of_line_text">Get out of line</string>
+    <string name="get_direction_text">Directions</string>
+    <string name="call_us_text">Call Us</string>
+    <string name="add_to_favorite_text">Add to favorites</string>
+    <string name="add_to_cart_text">Add to cart</string>
+    <string name="special_request_text">Any Special Requests...</string>
+    <string name="menu_empty_text">No Menu to display!</string>
+    <string name="menu_loading_text">Please wait while we load your menu !</string>
+
+    <string name="hostess_offline_msg">We are sorry, but this service is temporarily unavailable, please try again later!"</string>
+
+    <string name="not_in_geofence">Sorry...\nBut you must be at a Restaurant to post in QuickChat.\n\nYou may view others Posts by going to that Restaurant and then Clicking View QuickChats.</string>
+
+    <string name="in_geofence">Alert...\nPlease select the Restaurant you are at:</string>
+
+
+    <string-array name="seat_selection">
+        <item>0 </item>
+        <item>1 </item>
+        <item>2 </item>
+        <item>3 </item>
+        <item>4 </item>
+        <item>5 </item>
+        <item>6 </item>
+        <item>7 </item>
+        <item>8 </item>
+        <item>9 </item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="sort_by">
+        <item>Sort By</item>
+        <item>Distance</item>
+        <item>QB Supported</item>
+        <item>Rating</item>
+    </string-array>
+
+    <string-array name="sort_menu_items">
+        <item>Sort By</item>
+        <item>Price (L-H)</item>
+        <item>THC (H-L)</item>
+        <item>CBD (H-L)</item>
+    </string-array>
+    <string name="title_activity_home_screen">HomeScreenActivity</string>
+
+    <string-array name="chat_images_sorting">
+        <item>Sort By</item>
+        <item>Likes</item>
+        <item>Date</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_pre_order">PreOrder</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="title_activity_selected_category">Modify Your Needs</string>
+    <string name="title_activity_modified_order">ModifiedOrderActivity</string>
+    <string name="title_activity_order_confirmation">OrderConfirmationActivity</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="search_dispensaries">Finding Your Bud Now...</string>
+    <string name="set_as_favorite">Set as favorite</string>
+    <string name="name_validation">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="email_validation">abcdefghijklmnopqrstuvwxyz@_. 1234567890</string>
+    <string name="number_validation">1234567890</string>
+    <string name="server">server</string>
+    <!--<string name="gcm_sender_id">599098101148</string>-->
+    <string name="gcm_sender_id">686672581527</string>
+
+    <string-array name="quantity">
+        <!--<item>Remove</item>-->
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>84</item>
+        <item>85</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+        <item>89</item>
+        <item>90</item>
+        <item>91</item>
+        <item>92</item>
+        <item>93</item>
+        <item>94</item>
+        <item>95</item>
+        <item>96</item>
+        <item>97</item>
+        <item>98</item>
+        <item>99</item>
+    </string-array>
+
+    <!-- Missing Permission help messages !-->
+    <string name="missing_permission_title">Permission Missing</string>
+
+    <string name="open_settings">OPEN SETTINGS</string>
+    <string name="alert_cancel">Cancel</string>
+    <string name="location_missing_message">The Location permission is missing.\n\nTo grant this permission, click on OPEN SETTINGS, then Permissions and turn the Location permission on.</string>
+    <string name="storage_permission_missing_message">The Storage permission is missing.\n\nTo grant this permission, click on OPEN SETTINGS, then Permissions and turn the Storage permission on.</string>
+    <string name="camera_permission_missing_message">The Camera permission is missing.\n\nTo grant this permission, click on OPEN SETTINGS, then Permissions and turn the Camera permission on.</string>
+
+</resources>

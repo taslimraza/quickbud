@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.app.android.quickbud.activities.PageScreenActivity">
+
+    <ImageView
+        android:id="@+id/rest_image"
+        android:layout_height="130dp"
+        android:layout_width="match_parent"
+        android:padding="25dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/rocknes_logo" />
+
+    <TextView
+        android:id="@+id/rest_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_image"
+        android:layout_marginTop="10dp"
+        android:text="Restaurant name"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/patron_page_rest_name"/>
+
+    <TextView
+        android:id="@+id/rest_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_name"
+        android:text="Restaurant address"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/rest_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_address"
+        android:text="Restaurant number"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/paging_message1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Table is now ready!"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/paging_message2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paging_message1"
+        android:layout_marginTop="15dp"
+        android:text="Please see your hostess to be seated."
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/paging_thanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paging_message2"
+        android:layout_marginTop="20dp"
+        android:text="@string/qt_paging_thanks_text"
+        android:gravity="center"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/stop_paging"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/paging_thanks"
+        android:text="Stop Pager"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/button_text_color"
+        android:background="@color/primary_color"/>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/chat_myPic"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/chat_myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_myPic"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:text="Julia"/>
+
+    <ImageView
+        android:id="@+id/wine_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/chat_yourPic"
+        android:layout_toRightOf="@+id/chat_myPic"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/chat_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/wine_icon"
+        android:layout_toLeftOf="@+id/chat_yourPic"
+        android:layout_toRightOf="@+id/chat_myPic"
+        android:layout_marginTop="15dp"
+        android:text="sample msg"/>
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/chat_yourPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:src="@mipmap/chat_user_image"/>
+    <TextView
+        android:id="@+id/chat_yourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chat_yourPic"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:text="Robert"/>
+</RelativeLayout>

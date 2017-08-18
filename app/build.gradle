@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.1'
+    defaultConfig {
+        applicationId "com.app.android.quickbud"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 7
+        versionName "1.4"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    repositories {
+        maven {
+//            url 'https://download.01.org/crosswalk/releases/crosswalk/android/maven2'
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+        mavenCentral()
+    }
+    dependencies {
+//        compile fileTree(dir: 'libs', include: ['*.jar'])
+//        testCompile 'junit:junit:4.12'
+
+        compile 'com.android.support:appcompat-v7:23.0.1'
+//        compile 'com.android.support:appcompat-v7:25.0.1'
+        compile 'com.google.android.gms:play-services-maps:10.2.0'
+        compile 'com.google.android.gms:play-services-location:10.2.0'
+        compile 'com.google.firebase:firebase-appindexing:10.2.0'
+        compile 'com.android.support:design:23.0.1'
+        compile 'com.android.support:recyclerview-v7:23.0.1'
+        compile 'com.android.support:cardview-v7:23.0.1'
+        compile 'com.github.bumptech.glide:glide:3.6.1'
+//        compile 'com.google.android.gms:play-services-gcm:8.4.0'
+        compile 'com.android.volley:volley:1.0.0'
+//        compile 'com.mcxiaoke.volley:library:1.0.19'
+        compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.14'
+        compile 'org.mod4j.org.apache.commons:lang:2.1.0'
+        compile 'com.google.code.gson:gson:2.5'
+//        compile 'org.igniterealtime.smack:smack-android:4.1.0-rc1'
+//        compile 'org.igniterealtime.smack:smack-tcp:4.1.0-rc1'
+//        compile 'org.igniterealtime.smack:smack-im:4.1.0-rc1'
+//        compile 'org.igniterealtime.smack:smack-extensions:4.1.0-rc1'
+//        compile 'com.factual:factual-java-driver:1.8.9-android'
+        compile 'com.android.support:multidex:1.0.0'
+//        compile 'com.facebook.fresco:fresco:0.11.0'
+//        compile 'com.facebook.fresco:webpsupport:0.11.0'
+        compile 'com.yelp.clientlib:yelp-android:2.0.0'
+        compile 'com.google.firebase:firebase-messaging:10.2.0'
+    }
+}
+dependencies {
+    compile 'com.android.support:support-v4:23.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

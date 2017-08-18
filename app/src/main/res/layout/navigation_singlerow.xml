@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/flyout_menu_listView_backgroud">
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:src="@mipmap/icon_history" />
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/menu_image"
+        android:text="Booking History"
+        android:textColor="@color/menu_text"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/menu_line_hr" />
+</RelativeLayout>

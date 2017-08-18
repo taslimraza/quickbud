@@ -1,0 +1,197 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.app.android.quickbud.activities.ListOfRestaurantActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:id="@+id/loading_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/loading_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/loading_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/search_dispensaries" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/list_of_restaurant_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar">
+
+            <RelativeLayout
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.app.android.quickbud.activities.ListOfRestaurantActivity" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imagelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/map"
+                android:padding="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/restaurant_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--<EditText-->
+                    <!--android:id="@+id/search_rest"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_toLeftOf="@+id/search_close"-->
+                    <!--android:backgroundTint="@android:color/transparent"-->
+                    <!--android:focusableInTouchMode="true"-->
+                    <!--android:hint="Search By Restaurant"-->
+                    <!--android:imeOptions="actionSearch"-->
+                    <!--android:inputType="text"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_marginLeft="5dp"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/search_close"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_toLeftOf="@+id/sort_by"-->
+                    <!--android:src="@mipmap/search_icon" />-->
+
+                <!--<View-->
+                <!--android:id="@+id/line"-->
+                <!--android:layout_width="2dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_toLeftOf="@+id/sort_by"-->
+                <!--android:background="@color/spinner_bg" />-->
+
+                <Spinner
+                    android:id="@+id/sort_by"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/sort_by"
+                    android:background="#E9E9E9" />
+
+                <com.app.android.quickbud.utils.CustomListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/line1" />
+
+                <ProgressBar
+                    android:id="@+id/loadMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/listView"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/footer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="#fff">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imagelist"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:src="@mipmap/map" />-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/primary_color" />-->
+
+            <!--<SeekBar-->
+                <!--android:id="@+id/seek_bar"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_toRightOf="@+id/imagelist"-->
+                <!--android:max="3" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/search_radius"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_toRightOf="@+id/seek_bar"-->
+                <!--android:drawableLeft="@mipmap/location_icon_small"-->
+                <!--android:text=""-->
+                <!--android:textColor="@color/primary_color" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@id/footer"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="30dp">-->
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fab_vote_win"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/ic_winner_white"/>-->
+
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/drawer_menu" />-->
+
+</android.support.v4.widget.DrawerLayout>

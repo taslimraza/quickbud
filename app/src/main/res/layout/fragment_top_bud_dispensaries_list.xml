@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.android.quickbud.fragments.TopBudsListFragment">
+
+    <TextView
+        android:id="@+id/national_top_bud_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="National Top Buds List"
+        android:textColor="#000"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/national_top_bud_sub_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/national_top_bud_txt"
+        android:paddingLeft="10dp"
+        android:text="As determined by total user likes"
+        android:textColor="#000"
+        android:textSize="14dp"/>
+
+    <ListView
+        android:id="@+id/top_buds_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/national_top_bud_sub_txt"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

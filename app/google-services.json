@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "109974180373",
+    "firebase_url": "https://quickbud-160208.firebaseio.com",
+    "project_id": "quickbud-160208",
+    "storage_bucket": "quickbud-160208.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109974180373:android:00c6199d7137fe4e",
+        "android_client_info": {
+          "package_name": "com.app.android.quickbud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109974180373-98v7lkcb4dm6jqgjkud0b138c903b9v8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr5FQKLOh7pPWgfqxT22C5lPA5QEKru2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

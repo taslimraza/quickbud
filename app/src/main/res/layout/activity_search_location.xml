@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hint="Current Location"
+    android:label="@string/app_name">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar">
+
+            <com.app.android.quickbud.utils.ExpandableListView
+                android:id="@+id/searched_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF" />
+
+
+            <TextView
+                android:id="@+id/current_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/searched_listview"
+                android:background="@color/search_location_cur_loc_bg"
+                android:ems="10"
+                android:paddingBottom="10dp"
+                android:paddingLeft="28dp"
+                android:paddingTop="5dp"
+                android:text="Current Location"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/current_location_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_loc">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="21dp"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/current_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="10"
+                    android:padding="18dp"
+                    android:paddingLeft="28dp"
+                    android:text="Current Location"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/valueaddlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/current_location_layout"
+                android:background="@color/search_location_cur_loc_bg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="28dp"
+                android:paddingTop="5dp"
+                android:text="Recent Searches"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <com.app.android.quickbud.utils.ExpandableListView
+                android:id="@+id/savedSearchListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/valueaddlist"
+                android:background="#FFFFFF"
+                android:padding="8dp"
+                android:paddingLeft="5dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

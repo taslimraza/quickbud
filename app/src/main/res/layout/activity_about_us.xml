@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.android.quickbud.activities.AboutUsActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:text="@string/app_version"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/version_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:text="v1.0"/>
+</RelativeLayout>

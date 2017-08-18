@@ -1,0 +1,152 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/chat_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <RelativeLayout
+            android:id="@+id/chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar"
+            android:background="@mipmap/qt_chat_bg">
+
+            <!--<TextView-->
+                <!--android:id="@+id/chat_load_more"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/chat_gray"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="Load earlier..."-->
+                <!--android:visibility="gone" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/accuracy"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:textSize="18dp"-->
+                <!--android:text="Accuracy - "/>-->
+
+            <ListView
+                android:id="@+id/chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/msg_send_layout"
+                android:divider="@null" />
+
+            <LinearLayout
+                android:id="@+id/msg_send_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="3"
+                android:background="@color/chat_send_msg_layout_bg">
+
+                <EditText
+                    android:id="@+id/write_msg"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/box_background"
+                    android:hint="@string/quick_chat_msg_hint"
+                    android:padding="5dp" />
+                <requestFocus />
+
+                <ImageView
+                    android:id="@+id/send_msg"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/custom_chat_button"
+                    android:padding="7dp"
+                    android:src="@mipmap/rsz_send" />
+
+                <ImageView
+                    android:id="@+id/send_image"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/custom_chat_button"
+                    android:padding="7dp"
+                    android:src="@mipmap/camera_36" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/loading_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loading_image"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/image_preview_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chat_image_preview_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/image_caption"/>
+
+        <EditText
+            android:id="@+id/image_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/image_done"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:backgroundTint="#fff"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:hint="Add caption"/>
+
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/close"
+            android:layout_marginLeft="40dp"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/image_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/tick"
+            android:layout_marginRight="40dp"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+    <!--<include layout="@layout/drawer_menu" />-->
+
+</android.support.v4.widget.DrawerLayout>

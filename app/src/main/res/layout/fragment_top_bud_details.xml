@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_right_arrow"
+        android:paddingTop="12dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/menu_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/right_arrow"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/menu_item_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_name"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:animateLayoutChanges="true"
+            android:fitsSystemWindows="true"
+            card_view:cardElevation="1dp">
+
+            <RelativeLayout
+                android:id="@+id/row_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/menu_item_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/category_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/menu_placeholder" />
+
+                    <RelativeLayout
+                        android:id="@+id/thc_fav_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/favorite_layout"
+                        android:layout_margin="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/thc_fav_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:background="#A3BD6D"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="THC - " />
+
+                        <TextView
+                            android:id="@+id/cbd_fav_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="#6286EC"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="CBD - " />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/category_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/category_image"
+                        android:layout_gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/menu_item_name"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/category_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/category_title"
+                        android:layout_margin="5dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/menu_item_name"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/category_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/category_description"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/menu_item_name"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/thc_select_layout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_above="@+id/option_button"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:visibility="gone">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/thc_data"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:background="#A3BD6D"-->
+                        <!--android:paddingLeft="5dp"-->
+                        <!--android:paddingRight="5dp"-->
+                        <!--android:text="THC - " />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/cbd_data"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:background="#6286EC"-->
+                        <!--android:paddingLeft="5dp"-->
+                        <!--android:paddingRight="5dp"-->
+                        <!--android:text="CBD - " />-->
+
+                <!--</RelativeLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/like_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/favorite_icon"
+                        android:layout_centerInParent="true"
+                        android:text="Likes"
+                        android:textStyle="bold"
+                        android:textColor="#000"/>
+
+                    <ImageView
+                        android:id="@+id/like_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/favorite_green_icon"/>
+
+                    <TextView
+                        android:id="@+id/likes_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/favorite_icon"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/option_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="Select"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/add_to_cart_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/down_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:minWidth="50dp"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/item_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="50dp"
+                        android:minWidth="50dp"
+                        android:text="0" />
+
+                    <Button
+                        android:id="@+id/up_buttton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:minWidth="50dp"
+                        android:text="+" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@id/loading_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/loading_image"
+                android:visibility="gone" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

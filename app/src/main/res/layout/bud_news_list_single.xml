@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/article_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/article_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/article_image"
+        android:gravity="right"
+        android:text="November 17th 2016"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/article_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/article_date"
+        android:layout_toRightOf="@+id/article_image"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/article_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/article_image"
+        android:layout_below="@+id/article_headline"
+        android:textSize="14dp"
+        android:textColor="#000"
+        android:paddingLeft="10dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/article_link"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/article_source"-->
+        <!--android:text="www.quickbud.com"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textColor="@color/primary_color"-->
+        <!--android:padding="10dp"-->
+        <!--android:singleLine="true"/>-->
+
+</RelativeLayout>

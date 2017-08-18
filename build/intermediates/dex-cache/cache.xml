@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/b8639db76310cc608655628e2159b9712d12bc06/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_840e0dbd55cff4dea4a64c50df0e834961d7c9cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/975db252d0c34a4929fa7d2ef1725454932779a0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_372d8240636b54c84d99864bd9c54df36510b078/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_4b64be1eb8b8a16f5e0a7ba2a3ad3ae1ebb8a01b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value/1.1/f6951c141ea3e89c0f8b01da16834880a1ebf162/auto-value-1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f6951c141ea3e89c0f8b01da16834880a1ebf162">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/auto-value-1.1_49f0e82591cc55df84ec6495b4b27632529a7b03/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/e650ac781caa7b898f7c6a497270e0c28367718f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a77b3c61aca0c88edb98da9ac7c1f336bf7a161f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.2/84ffa765dd258dbab8695963c41308b054f3a1cb/jackson-databind-2.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="84ffa765dd258dbab8695963c41308b054f3a1cb">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.7.2_c5b64e5574b6ceb0e3235b56633993f6680591e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/a5dc5a4c4128e674c7ab94ffe12c4bb8c90d9225/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_ed8d134791bdcfc07b8d8d2ca76fed1da4755693/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.6.1_55f7bb2b0a8ca90a49e1429c30e2b4b74ff1d809/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/bb30b79a083fdf91e00e77ce4c754e52ea792c23/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1bdd13a423c231c286aef2d0608e0f45315193e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/0a874c810f8521e4486857002499ecbf4e5c080f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_abd8abe708420afb7bb0e7dc2de3f955c280a266/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-jackson/2.0.0/9506825ddc5a43b38a3d104db913ff0f4cb2e323/converter-jackson-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9506825ddc5a43b38a3d104db913ff0f4cb2e323">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-jackson-2.0.0_49d089ba2f69d618846ba9feff15752d8d97ac4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.3/fd32786786e2adb664d5ecc965da47629dca14ba/commons-codec-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fd32786786e2adb664d5ecc965da47629dca14ba">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-codec-1.3_ed33dd9d2b64db1716928af8fe8ad13a2b2f5abf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/c1de2e98cfff2b2c18587b4497c602910f29e869/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1fbf3733f36fea63e70373212796e70f9079981f">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dc3d8ed6d6b2b30f69d93659500e2d2fc925bb72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/0503acb48cbec5c75c3ff214ebaa6e04950ad0b1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4469fc46e2b471885e3126645efd04d87ec9d217/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/81383e33e60c985dfd708871d945afb08f46ec50/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dc0606099aa4fbc8dd55c1ea44d8a833817b84ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/cbfd1cab27c3c98681f314330f8d6d94169078cb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_556f8b7e996e1d6a4492d139d0d5ca819b158a37/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.yelp.clientlib/yelp-android/2.0.0/891f25cda5cc11278999b1e59259565dbc1e0a11/yelp-android-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="891f25cda5cc11278999b1e59259565dbc1e0a11">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/yelp-android-2.0.0_709bba96b6865fcbded0d33cae6c4baafacda9a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/22f7b568c29b46a960b6bd02bef8b2248ceb2a20/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b9440c9ff54a702604e86d14e8415a1304b8df6e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/oauth.signpost/signpost-core/1.2.1.2/bf95955dcf3d5a78c201e49b0c336787ea73f161/signpost-core-1.2.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf95955dcf3d5a78c201e49b0c336787ea73f161">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/signpost-core-1.2.1.2_1b71ad621fbb2ac49ae26a4f77610ed039fcabe4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/8235da8d6d1c00aa9f7fbaa790875da13391ef75/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f769ba2f7e5b92220c6697126e266bd45cea0c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/7bee3b605f2f6ede7aa0c306b5f373d0a71f9931/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e56057eb45514eb31705c6c95eceb0ebefe13aa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.0/19f42c154ffc689f40a77613bc32caeb17d744e3/jackson-annotations-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="19f42c154ffc689f40a77613bc32caeb17d744e3">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.7.0_1007e00298514107694d0d34e066863f46be626f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.2/8b8310381b690e317f5f0574e9b2dd7034778b4c/jackson-core-2.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8b8310381b690e317f5f0574e9b2dd7034778b4c">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.7.2_cc27434035a766d0f0997519d901d33f513801a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.0/5c06d197fb7fa875ad452f562e3310dd9949d066/retrofit-2.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5c06d197fb7fa875ad452f562e3310dd9949d066">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.0_d90d1614d07288e22b0836558f60cce915f3345b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/f0a1001955dcc6a59ed460fccb3eb3616aca9c3c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ac23b2b3f31ea1312a60902210c110a667a02abe">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ca70d2b7c99bc3436a39a16207158e1f2c96d7f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="686c608d1805b6d4d425ec4459e88164ffc85870">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.5_c6fa81e9a395aa5da8a576845269d468822acec9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_123ee0cb6b070b98951356832413c54ea6eb9fef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/a5dc5a4c4128e674c7ab94ffe12c4bb8c90d9225/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_67d774540dbe092655666ba9b727427c9d6ffcc6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/389fb205e94c8f52d3e2af84fe1f352b3d978eff/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c707bae3e53a919befaf54f01a55460e49a2fe71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/0b4dcca0452563bb4b27536f6582188893d6b832/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d66a5975717b9aa715df4ad5a2b46c72685dc04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_a690f303b66f4082d20deb8e55024f93b2330563/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/se.akerfeldt/okhttp-signpost/1.1.0/544600ae042f8fc113acb612ef30c69144b685d4/okhttp-signpost-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="544600ae042f8fc113acb612ef30c69144b685d4">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-signpost-1.1.0_f4d6795e02656ab78d1b4d8e4709d5667640a177/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/82fc2575542fb36d538281dd6ddd0beb50cb9b97/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3388da955dfee730549c493b997e8bc3240ce0a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/720f06db8509a6073fa06a2ef40e2514d6e798a1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_89c755f62783272b349b676ae769388c75717844/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.android/build-cache/dbab816991a4de87567d4b1f75bbc38c16e06860/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_060d6abe0ce8722515a5a7def7eecca2163c6a52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/mobi11/.gradle/caches/modules-2/files-2.1/org.mod4j.org.apache.commons/lang/2.1.0/c2200288f7c9dd4f9e8b647a95290f978362b567/lang-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c2200288f7c9dd4f9e8b647a95290f978362b567">
+        <dex dex="/home/mobi11/Desktop/QuickBud/app/build/intermediates/transforms/dex/debug/folders/1000/10/lang-2.1.0_742581cfc801609697305aa180aaecf136c26fc9/classes.dex" />
+    </item>
+
+</items>

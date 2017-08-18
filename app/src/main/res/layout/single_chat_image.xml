@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/like_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:src="@mipmap/ic_unlike"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/like_image">
+
+            <TextView
+                android:id="@+id/like_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Likes"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="120dp" />-->
+
+</RelativeLayout>

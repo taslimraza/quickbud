@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/picker_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A Table for:"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/primary_color"/>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picker_title"
+        android:src="@drawable/number_picker_line"/>
+
+    <com.app.android.quickbud.utils.CustomNumberPicker
+        android:id="@+id/number_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="20dp"
+        android:divider="@drawable/number_picker_line"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_picker"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number_picker"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number_picker"
+            android:layout_toRightOf="@+id/set_button"
+            android:layout_marginLeft="20dp"
+            android:text="Set"/>
+    </LinearLayout>
+
+</RelativeLayout>

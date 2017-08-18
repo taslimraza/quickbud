@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.android.quickbud.fragments.MenuOptionsFragment">
+
+    <!--<TextView-->
+    <!--android:id="@+id/options_name"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:text="Menu Options"-->
+    <!--android:textSize="18dp" />-->
+
+    <RelativeLayout
+        android:id="@+id/menu_option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ExpandableListView
+            android:id="@+id/options_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/favorite_layout"
+            android:childDivider="@android:color/transparent"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/favorite_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_above="@+id/special_request">
+
+            <TextView
+                android:id="@+id/favorite_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/favorite_icon"
+                android:gravity="center"
+                android:text="Favorite"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/favorite_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_favorite_unselected" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/special_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add_to_cart"
+            android:layout_margin="10dp"
+            android:hint="@string/special_request_text"
+            android:imeOptions="actionDone"
+            android:inputType="textVisiblePassword|textNoSuggestions" />
+
+        <Button
+            android:id="@+id/add_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:background="@color/primary_color"
+            android:text="@string/add_to_cart_text"
+            android:textColor="@color/button_text_color"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!--<pl.droidsonroids.gif.GifImageView-->
+        <!--android:id="@+id/loading_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:src="@drawable/loading_image"-->
+        <!--android:visibility="gone" />-->
+</RelativeLayout>
